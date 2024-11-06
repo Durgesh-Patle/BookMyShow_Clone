@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #ff4d4d;
+    --primary-hover: #e03e3e;
+    --text-color: #333;
+    --border-color: #ddd;
+    --background-color: #fff;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --padding: 8px 10px;
+    --border-radius: 4px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navBar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--background-color);
+    box-shadow: var(--shadow);
+  }
+  
+  .navBar1 img {
+    width: 220px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .navBar1 input,
+  .navBar1 select {
+    flex: 1;
+    margin: 0 30px;
+    padding: 6px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    outline: none;
+    /* border: 0; */
+    box-shadow: var(--box-shadow);
+  }
+  
+  .navBar1 select {
+    max-width: 120px; 
+    height: 40px;
+  }
+  
+  .navBar1 button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 11px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.7rem;
+    margin-right: 14px;
+  }
+  
+  .navBar1 button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .navBar1 svg {
+    cursor: pointer;
+    fill: var(--text-color);
+    transition: fill 0.2s;
+  }
+  
+  .navBar1 svg:hover {
+    fill: var(--primary-color);
+  }
+  
