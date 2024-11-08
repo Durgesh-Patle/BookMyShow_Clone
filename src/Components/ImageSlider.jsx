@@ -5,6 +5,7 @@ const images = [
   "/slider-image02.avif",
   "/slider-image03.avif",
   "/slider-image04.avif",
+  "/slider-image05.avif",
 ];
 
 function ImageSlider() {
