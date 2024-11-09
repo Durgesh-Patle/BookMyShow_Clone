@@ -28,25 +28,29 @@ function RecommendedMovies() {
   return (
     <>
       <div className="my-8 px-4">
-        <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Recommended Movies</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <h2 className="text-xl font-bold mb-4 text-center md:text-left">Recommended Movies</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {movies.map((movie, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-200 hover:scale-105">
-              <img src={movie.imageUrl} alt={movie.title} className="w-full h-64 object-cover" />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-800">{movie.title}</h3>
-                <p className="text-gray-500">{movie.type}</p>
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-200 hover:scale-105">
+              <img
+                src={movie.imageUrl}
+                alt={movie.title}
+                className="w-[250px] h-[300px] object-contain mx-auto"
+              />
+              <div className="p-2">
+                <h3 className="text-sm font-semibold text-gray-800">{movie.title}</h3>
+                <p className="text-xs text-gray-500">{movie.type}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="my-10 px-4">
+      <div className="my-6 px-4">
         <img
           src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
           alt="Streaming Collection"
-          className="w-full rounded-lg shadow-lg"
+          className="w-full rounded-lg shadow-md"
         />
       </div>
     </>

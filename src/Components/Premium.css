@@ -1,0 +1,23 @@
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+    color: #fff;
+    width: 25px; 
+    height: 25px; 
+}
+
+.custom-swiper .swiper-button-next {
+    right: 10px;
+}
+
+.custom-swiper .swiper-button-prev {
+    left: 10px;
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+    font-size: 20px; 
+    color: black;
+    background: #999999;
+    border-radius: 50%;
+    padding: 10px;
+}
